@@ -322,6 +322,7 @@ class InnerTube:
         verification_url = response_data['verification_url']
         user_code = response_data['user_code']
         print(f'Please open {verification_url} and input code {user_code}')
+        time.sleep(25)
         input('Press enter when you have completed this step.')
 
         data = {
